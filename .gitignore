@@ -1,0 +1,11 @@
+node_modules/
+.env
+.claude/settings.local.json
+engine/
+projects/*/
+!projects/.gitkeep
+inbox/*
+!inbox/.gitkeep
+outbox/*
+!outbox/.gitkeep
+*.log
