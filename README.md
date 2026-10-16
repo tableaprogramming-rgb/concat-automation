@@ -1,4 +1,4 @@
-# concat-editor
+# concat-editor-automation
 
 A conversational AI video editor: drop raw footage in `inbox/`, describe the
 edit in plain language, and get back a **live, still-editable video project**
