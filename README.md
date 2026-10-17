@@ -115,6 +115,12 @@ node setup.mjs
 Then copy `.env.example` to `.env` (done automatically by `setup.mjs` if
 missing) and add your `GROQ_API_KEY`, or plan to use `--local` instead.
 
+Note: `CLAUDE.md` — the master workflow that orchestrates transcription, cut
+decisions, and the `concat-edit` skill — is kept local and isn't tracked in
+this repo. A fresh clone needs its own `CLAUDE.md` for Claude to follow the
+full pipeline end to end; see "How it works" above for what it should wire
+together.
+
 ## Using it
 
 1. **Drop your raw footage** in `inbox/`.
@@ -152,7 +158,7 @@ node tools/apply-cuts.mjs inbox/raw.silence-transcript.json --cuts approved-cuts
 ## Project layout
 
 ```
-CLAUDE.md                       master workflow Claude follows
+CLAUDE.md                       master workflow Claude follows (local only, not tracked in this repo)
 setup.mjs                       builds concat-cli, runs the Phase 0 smoke test
 my-style.md / my-rules.md       your preferences (created on first run)
 inbox/   outbox/   my-sounds/   raw footage in, finished video out, your audio assets
